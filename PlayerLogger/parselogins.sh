@@ -48,6 +48,8 @@ do
 		mkdir $output
 	fi
 	rm -f ./$output/$name.log
+    
+    # prints: NAME joined/quit date time
 	echo -e $name'\t'$verb'\t'$datestamp $timestamp >> ./$output/$name.log
 
 done < $1
